@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PsychCare 2</title>
+  <link href="img/headerlogo.png'" rel="shortcut icon">
+  <link href="css/studenthomepage.css" rel="stylesheet">
+  <link href="css/appedited.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+</head>
+<body>
+  <section>
+    <header>
+    <div class="logo"><img src="img/logo.gif"></div>
+<nav>
+  <ul>
+               <li><a href="category.html" >Category</a></li>
+               <li><a href="#" >Appointments</a></li>
+               <li><a href="#" >Exam History</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
+        </ul>
+</nav>
+<div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+       <div class="bar1"></div>
+       <div class="bar2"></div>
+       <div class="bar3"></div>
+       <ul class="mobile-menu">
+       <li><a href="{{ url('category') }}">Category</a></li>
+         <li><a href="{{ url('appointment_history') }}">Appointments</a></li>
+         <li><a href="{{ url('exams_history') }}">Exam History</a></li>
+         <li><a href="{{ url('home') }}" class="active">Home</a></li>
+       </ul>
+     </div>
+    </header>
+    @include('partials.alerts')
+    <div class="student-align">
+    <div class="studentcontainer">
+       <div class="menu">
+   <h2>Menu</h2>
+</div>
+           <div class="swiper mySwiper">
+           <div class="swiper-wrapper">
+             <div class="swiper-slide"><img src="img/wellness.jpeg">
+         <center>
+           <p>Wellness</p><br>
+           <h5><a href="wellness.html">  <button class="takebtn" >View Guidelines</button></a></h5></center>
+           </div>
+             <div class="swiper-slide"><img src="img/stressscale.jpg">
+             <center>
+             <p>Stress Scale</p>
+             <h5><a href="stress_exam.html">  <button class="takebtn" >Take Exam</button></a></h5></center>
+           </div>
+             <div class="swiper-slide"><img src="img/personality.jpg">
+             <center>
+             <p>Personality</p>
+             <h5><a href="personality_exam.html">  <button class="takebtn" >Take Exam</button></a></h5></center>
+             </div>
+             <div class="swiper-slide"><img src="img/learner.jpg">
+             <center>
+             <p>Learner</p><br>
+             <h5><a href="learner_exam.html">  <button class="takebtn">Take Exam</button></a></h5></center>
+           </div>
+           </div>
+           <div class="homeswiper-pagination"></div>
+         </div>
+         <div class="aboutus">
+         <h1>About Us</h1>
+
+       </div>
+       <div class="description">
+         <h4>PsychCare2.0</h4> <p>is about checking your mental health. Mental health includes our emotional, psychological, and social well-being. It affects how we think, feel, and act. It also helps determine how we handle stress, relate to others, and make healthy choices. Mental health is important at every stage of life, from childhood and adolescence through adulthood. Issues that are related to mental health needs attention and guidance as soon as possible.
+                    Through this system, you can seek guidance on our reliable counselors here in the University.<br><a href="#"><button type="button" class="takebtn" >Appoint Now </button></a></p>
+         </div>
+         <div class="description2">
+         <h4>Stress Scale</h4> <p>is to check your stress level from none to severe. Taking this test at least twice a week is good to avoid mental disorder. Stress can also affect your personality and learning, taking stress scale first is recommended before taking others. </p>
+</div>
+<div class="description3">
+         <h4>Learner</h4> <p>is to check what type of learners you are. Awareness of our learning styles play an important role towards academic succes. We learn at work, school, books and other things we have interests with everyday. So taking the test often will be a good help to you.  </p>
+</div>
+<div class="description4">
+         <h4>Personality</h4> <p>is to check what behavior you have. Are you comfortable being alone or are you more comfortable being surrounded by a lot of people instead ? You can find out what type of person you are on this test. </p>
+</div>
+
+</div>
+         <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+         <script src="js/carousel.js"></script>
+   </section>
+   <script>
+   function toggleMobileMenu(menu) {
+   menu.classList.toggle('open');
+}
+</script>
+
+</body>
+</html>

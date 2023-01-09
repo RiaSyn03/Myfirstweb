@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PsychCare 2</title>
+  <link href="css/questions.css" rel="stylesheet">
+  <link href="css/piechart.css" rel="stylesheet">
+  <link href="css/appedited.css" rel="stylesheet">
+</head>
+<body style="background-color: #59b7d1">
+  <header>
+    <div class="logo"><img src="img/logo.gif"></div>
+        <ul>
+            <li><a href="index.html">Go to Homepage</a></li>
+            <li><a href="learner_exam.html">Learner</a></li>
+            <li><a href="personality_exam.html" >Personality</a></li>
+            <li><a href="stress_exam.html" class="active">Stress Scale</a></li>
+        </ul>
+    </header>
+      <!-- @include('partials.alerts') -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <div class="wrapper">
+    <div class="stresstitle" id="1">1. Little interest or pleasure in doing things.</div>
+    <div class="box">
+      <input type="radio" name="question1" id="radio11" value="0">
+      <label for="radio11"> Not at all </label>
+
+      <input type="radio" name="question1" id="radio21" value="1">
+      <label for="radio21"> Several days </label>
+
+      <input type="radio" name="question1" id="radio31" value="2">
+      <label for="radio31"> More than half the days </label>
+
+      <input type="radio" name="question1" id="radio41" value="3">
+      <label for="radio41"> Nearly everyday </label>
+    </div>
+  </div>
+  <br><br><br>
+  <div class="wrapper">
+    <div class="stresstitle" id="2">2. Feeling down, depressed, or hopeless</div>
+    <div class="box">
+      <input type="radio" name="question2" id="radio12" value="0">
+      <label for="radio12"> Not at all </label>
+
+      <input type="radio" name="question2" id="radio22" value="1">
+      <label for="radio22"> Several days </label>
+
+      <input type="radio" name="question2" id="radio32" value="2">
+      <label for="radio32"> More than half the days </label>
+
+      <input type="radio" name="question2" id="radio42" value="3">
+      <label for="radio42"> Nearly everyday </label>
+    </div>
+  </div>
+  <br><br><br>
+  <div class="wrapper">
+    <div class="stresstitle" id="3">3. Trouble falling or staying asleep, or sleeping too much</div>
+    <div class="box">
+      <input type="radio" name="question3" id="radio13" value="0">
+      <label for="radio13"> Not at all </label>
+
+      <input type="radio" name="question3" id="radio23" value="1">
+      <label for="radio23"> Several days </label>
+
+      <input type="radio" name="question3" id="radio33" value="2">
+      <label for="radio33"> More than half the days </label>
+
+      <input type="radio" name="question3" id="radio43" value="3">
+      <label for="radio43"> Nearly everyday </label>
+    </div>
+  </div>
+  <br><br><br>
+  <div class="wrapper">
+    <div class="stresstitle" id="4">4. Feeling tired or having little energy</div>
+    <div class="box">
+      <input type="radio" name="question4" id="radio14" value="0">
+      <label for="radio14"> Not at all </label>
+
+      <input type="radio" name="question4" id="radio24" value="1">
+      <label for="radio24"> Several days </label>
+
+      <input type="radio" name="question4" id="radio34" value="2">
+      <label for="radio34"> More than half the days </label>
+
+      <input type="radio" name="question4" id="radio44" value="3">
+      <label for="radio44"> Nearly everyday </label>
+    </div>
+  </div>
+  <br><br><br>
+  <div class="wrapper">
+    <div class="stresstitle" id="5">5. Poor appetite or overeating</div>
+    <div class="box">
+      <input type="radio" name="question5" id="radio15" value="0">
+      <label for="radio15"> Not at all </label>
+
+      <input type="radio" name="question5" id="radio25" value="1">
+      <label for="radio25"> Several days </label>
+
+      <input type="radio" name="question5" id="radio35" value="2">
+      <label for="radio35"> More than half the days </label>
+
+      <input type="radio" name="question5" id="radio45" value="3">
+      <label for="radio45"> Nearly everyday </label>
+    </div>
+  </div>
+  <br><br><br>
+  <div class="wrapper">
+    <div class="stresstitle" id="6">6. Feeling bad about yourself or that you are a failure or have let yourself or your family down</div>
+    <div class="box">
+      <input type="radio" name="question6" id="radio16" value="0">
+      <label for="radio16"> Not at all </label>
+
+      <input type="radio" name="question6" id="radio26" value="1">
+      <label for="radio26"> Several days </label>
+
+      <input type="radio" name="question6" id="radio36" value="2">
+      <label for="radio36"> More than half the days </label>
+
+      <input type="radio" name="question6" id="radio46" value="3">
+      <label for="radio46"> Nearly everyday </label>
+    </div>
+  </div>
+  <br><br><br>
+  <div class="wrapper">
+    <div class="stresstitle" id="2">7. Trouble concentrating on things, such as reading the newspaper or watching television</div>
+    <div class="box">
+      <input type="radio" name="question7" id="radio17" value="0">
+      <label for="radio17"> Not at all </label>
+
+      <input type="radio" name="question7" id="radio27" value="1">
+      <label for="radio27"> Several days </label>
+
+      <input type="radio" name="question7" id="radio37" value="2">
+      <label for="radio37"> More than half the days </label>
+
+      <input type="radio" name="question7" id="radio47" value="3">
+      <label for="radio47"> Nearly everyday </label>
+    </div>
+  </div>
+  <br><br><br>
+  <div class="wrapper">
+    <div class="stresstitle" id="8">8. Moving or speaking so slowly that other people could have noticed</div>
+    <div class="box">
+      <input type="radio" name="question8" id="radio18" value="0">
+      <label for="radio18"> Not at all </label>
+
+      <input type="radio" name="question8" id="radio28" value="1">
+      <label for="radio28"> Several days </label>
+
+      <input type="radio" name="question8" id="radio38" value="2">
+      <label for="radio38"> More than half the days </label>
+
+      <input type="radio" name="question8" id="radio48" value="3">
+      <label for="radio48"> Nearly everyday </label>
+    </div>
+  </div>
+  <br><br><br>
+  <div class="wrapper">
+    <div class="stresstitle" id="9">9. Thoughts that you would be better off dead, or of hurting yourself</div>
+    <div class="box">
+      <input type="radio" name="question9" id="radio19" value="0">
+      <label for="radio19"> Not at all </label>
+
+      <input type="radio" name="question9" id="radio29" value="1">
+      <label for="radio29"> Several days </label>
+
+      <input type="radio" name="question9" id="radio39" value="2">
+      <label for="radio39"> More than half the days </label>
+
+      <input type="radio" name="question9" id="radio49" value="3">
+      <label for="radio49"> Nearly everyday </label>
+    </div>
+  </div>
+  <div class="container-top">
+    <a href="#" class="top"></a>
+  </div>
+  <br><br><br>
+<!-- <p>Total: £ <span id="total">0</span></p> -->
+<input type="hidden" id="result_name" name="result_name" value=""/>
+<br><br><br><br><br><br>
+<center>
+<br><br><br><br><br><br><br><br>
+<button type="button" class="resultbtn" onclick="calculate()">Get Result</button>
+</center>
+
+<!--
+<p>The Result is : <br>
+  <span id = "result"></span>
+</p> -->
+<div id="not-stressmodal">
+  <div class="not-stresscard" id="not-stresscard">
+    <div class="not-stress-face"></div>
+    <div class="back-face">
+      <div class="chartCard">
+        <div class="chartBox">
+        <canvas id="myChart"></canvas>
+        </div>
+      </div>
+      <br><br><br>
+      <a  href="index.html"> <button type="button" class="back-facebtn">Done !</button></a>
+      <br><br><br>
+    </div>
+  </div>
+</div>
+<div id="stressmodal">
+            <div class="stresscard" id="stresscard">
+                <div class="stress-face"></div>
+                <div class="back-face">
+                <div class="chartCard">
+      <div class="chartBox">
+        <canvas id="myChart2"></canvas>
+      </div>
+    </div>
+                    <br><br><br>
+                    <a  href="index.html"> <button type="button" class="back-facebtn">Done !</button></a>
+                    <br><br><br>
+                </div>
+            </div>
+        </div>
+        <div id="super-stressmodal">
+            <div class="super-stresscard" id="super-stresscard">
+                <div class="super-stress-face"></div>
+                <div class="back-face">
+                <div class="chartCard">
+      <div class="chartBox">
+        <canvas id="myChart3"></canvas>
+      </div>
+    </div>
+                    <br><br><br>
+                    <a  href="index.html"> <button type="button" class="back-facebtn">Done !</button></a>
+                    <br><br><br>
+                </div>
+            </div>
+        </div>
+        <div id="moderately-severe-stressmodal">
+            <div class="moderately-severe-stresscard" id="moderately-severe-stresscard">
+                <div class="moderately-severe-face"></div>
+                <div class="back-face">
+                <div class="chartCard">
+      <div class="chartBox">
+        <canvas id="myChart4"></canvas>
+      </div>
+    </div>
+                    <br><br><br>
+                    <a  href="index.html"> <button type="button" class="back-facebtn">Done !</button></a>
+                    <br><br><br>
+                </div>
+            </div>
+        </div>
+        <div id="severe-stressmodal">
+            <div class="severe-stresscard" id="severe-stresscard">
+                <div class="severe-face"></div>
+                <div class="back-face">
+                <div class="chartCard">
+      <div class="chartBox">
+        <canvas id="myChart5"></canvas>
+      </div>
+    </div>
+                    <br><br><br>
+                    <a  href="index.html"> <button type="button" class="back-facebtn">Done !</button></a>
+                    <br><br><br>
+                </div>
+            </div>
+        </div>
+        </form>
+  <input type="hidden" value="{{$questioncount}}" id="noquestions" name="noquestions"/><br>
+</body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/piechart.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+  function calculate(){
+
+    var valid = false ;
+    let questions = ['question1', 'question2', 'question3', 'question4', 'question5', 'question6', 'question7', 'question8', 'question9'];
+    var answeredQuestions = [];
+    questions.forEach( question => {
+      if (document.querySelector("input[name="+question+"]:checked")) {
+        var questionAnswer = document.querySelector("input[name="+question+"]:checked").value;
+        answeredQuestions.push(questionAnswer);
+      }
+    });
+    if (answeredQuestions.length < 9) {
+      alert ("Please answer all the questions");
+      return false;
+    } else {
+      console.log("All questions has been answered!");
+      valid = true;
+    }
+
+    if(valid){
+
+      $(":radio")
+        var total = 0;
+        let noquestions = document.getElementById('noquestions').value;
+        var maxscore = 3*noquestions;
+        console.log(maxscore);
+
+        $(":radio:checked").each(function(){
+            total += Number(this.value);
+            console.log(total);
+
+        });
+        $("#total").text(total);
+
+        // $("#result").text(notstress);
+        if(total <= 4 ){
+          // var blur = document.getElementById('blur');
+          // blur.classList.toggle('active');
+          var notstressmodal = document.getElementById('not-stressmodal');
+          notstressmodal.classList.toggle('active');
+          $("#result_name").val("You don't have a depression");
+
+
+        } else if (total <= 9) {
+          // var blur = document.getElementById('blur');
+          // blur.classList.toggle('active');
+          var stressmodal = document.getElementById('stressmodal');
+          stressmodal.classList.toggle('active');
+          $("#result_name").val("You have mild depression");
+
+        }else if (total <= 14) {
+          // var blur = document.getElementById('blur');
+          // blur.classList.toggle('active');
+          var superstressmodal = document.getElementById('super-stressmodal');
+          superstressmodal.classList.toggle('active');
+          $("#result_name").val("You have moderate depression");
+
+        } else if (total <= 19) {
+          // var blur = document.getElementById('blur');
+          // blur.classList.toggle('active');
+          var moderatelystressmodal = document.getElementById('moderately-severe-stressmodal');
+          moderatelystressmodal.classList.toggle('active');
+
+          $("#result_name").val("You have a moderately severe depression");
+
+        } else if (total > 20) {
+          // var blur = document.getElementById('blur');
+          // blur.classList.toggle('active');
+          var severemodal = document.getElementById('severe-stressmodal');
+          severemodal.classList.toggle('active');
+          $("#result_name").val("You have severe depression");
+
+        }else {
+          alert ("Please answer all the questions");
+          return false;
+        }
+    };
+  };
+</script>
+
+<script>
+  //Get the button
+  var mybutton = document.getElementById("myBtn");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+</body>
+</html>
